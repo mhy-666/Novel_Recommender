@@ -1,4 +1,3 @@
-# From GitHub repository:
 import re
 import cfscrape
 import argparse

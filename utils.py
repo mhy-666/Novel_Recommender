@@ -1,4 +1,3 @@
-# From GitHub repository:
 import sys
 
 
