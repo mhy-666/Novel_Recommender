@@ -1,3 +1,8 @@
+# model files
+llamafile/
+*.gguf
+*.exe
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
