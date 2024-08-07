@@ -39,8 +39,8 @@ class NovelScraper:
         novel_ids = self.get_all_novel_ids()
 
         all_novel_information = []
-        for novel_id in progressbar(novel_ids, prefix="Parsing novels: ", suffix="current novel id: "):
-            info = self.parse_single_novel(novel_id)
+        for n_id in progressbar(novel_ids, prefix="Parsing novels: ", suffix="current novel id: "):
+            info = self.parse_single_novel(n_id)
             all_novel_information.append(info)
             sleep(self.delay)
         return all_novel_information
