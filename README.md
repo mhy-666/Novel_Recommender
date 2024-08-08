@@ -137,21 +137,21 @@ docker exec -it novel-recommender pytest tests/
 
 The performance of the novel recommender system was evaluated using human evaluation, which involved assessing the quality of recommendations by real users. The evaluation process included the following steps:
 
-Evaluation Criteria:
+### Evaluation Criteria:
 
-Relevance: The degree to which the recommended novels match the user's query.
+**Relevance**: The degree to which the recommended novels match the user's query.
 
-Diversity: The variety of recommendations provided.
+**Diversity**: The variety of recommendations provided.
 
-User Satisfaction: Overall satisfaction with the recommendations.
+**User Satisfaction**: Overall satisfaction with the recommendations.
 
-Results:
+### Results:
 
-Relevance: The system achieved an average relevance score of 4.2 out of 5.
+**Relevance**: The system achieved an average relevance score of 4.2 out of 5.
 
-Diversity: The average diversity score was 4.0 out of 5.
+**Diversity**: The average diversity score was 4.0 out of 5.
 
-User Satisfaction: The overall user satisfaction score was 4.3 out of 5.
+**User Satisfaction**: The overall user satisfaction score was 4.3 out of 5.
 
 ## Vector Database
 
