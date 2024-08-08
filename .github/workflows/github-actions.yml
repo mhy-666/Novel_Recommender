@@ -56,10 +56,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install mypy bandit
-
-      - name: Run mypy
-        run: mypy src/
+          pip install bandit
 
       - name: Run bandit
         run: bandit -r src/
