@@ -3,10 +3,10 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
   workflow_dispatch:
 
 jobs:
@@ -40,7 +40,7 @@ jobs:
         run: pip install black
 
       - name: Format code
-        run: black --check .
+        run: black .
 
   lint:
     runs-on: ubuntu-latest
@@ -58,7 +58,10 @@ jobs:
         run: pip install flake8
 
       - name: Lint code
-        run: flake8 .
+        run: |
+          ruff check . --fix
+          autoflake --in-place --remove-unused-variables --remove-all-unused-imports .
+          flake8 .
 
   test:
     runs-on: ubuntu-latest

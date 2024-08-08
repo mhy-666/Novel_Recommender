@@ -19,4 +19,7 @@ langchain_community
 langchain_pinecone
 pinecone 
 pytest
-sentence-transformers
+black 
+flake8 
+ruff 
+autoflake

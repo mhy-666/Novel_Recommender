@@ -1,32 +1,9 @@
 from openai import OpenAI
 import os
 
-
-def create_openai_client():
+def get_book_recommendation_with_rag(client, genre, description):
     '''
-    Create an OpenAI client with the OpenAI API key.
-    Args:
-        None
-    Returns:
-        client: OpenAI client
-    '''
-    # get OpenAI API key
-    openai_api_key = 'sk-no-key-required'
-    base_url = os.environ.get("LLAMAFILE_URL")
-    print("base_url")
-    print(base_url)
-    # initialize OpenAI client
-    client = OpenAI(
-        base_url=base_url,
-        api_key=openai_api_key
-    )
-    return client
-
-
-# define a function to get book recommendations based on user input
-def get_book_recommendation(client, genre, description):
-    '''
-    Get book recommendations based on user input.
+    Get book recommendations based on user input with rag
     Args:
         client: OpenAI client
         genre: str, genre of the book
