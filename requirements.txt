@@ -20,6 +20,7 @@ langchain_pinecone
 pinecone
 pytest
 black
-flake8
-ruff
+pylint
+mypy
+bandit
 autoflake
