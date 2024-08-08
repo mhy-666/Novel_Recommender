@@ -18,3 +18,5 @@ langchain_text_splitters
 langchain_community
 langchain_pinecone
 pinecone 
+pytest
+sentence-transformers
