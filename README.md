@@ -181,6 +181,8 @@ We use Continuous Integration and Continuous Deployment (CI/CD) tools to ensure 
 
 To maintain high code quality, we have integrated the `pre-commit` tool into our CI/CD process to handle code formatting and checking. `pre-commit` is a tool for setting up Git hooks that automatically run a series of code quality tools before each commit.
 
+![pre-commit](./data/cicd.png)
+
 #### Configuration File
 
 The `pre-commit` configuration file is `.pre-commit-config.yaml` and includes the following hooks:
