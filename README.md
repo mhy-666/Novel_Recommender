@@ -319,9 +319,7 @@ jobs:
           ssh user@server 'docker pull ghcr.io/your_username/novel_recommender:latest && docker run -d -p 8501:8501 ghcr.io/your_username/novel_recommender:latest'
 ```
 
-## Conclusion
+##### Demonstrate that you've taken a risk to learn something new, incorporated a cool new framework/technology, or gone above and beyond the minimum requirements
 
-This project showcases the integration of advanced machine learning models with scalable databases and modern web technologies to create a user-centric application. The use of CI/CD pipelines ensures smooth deployment and continuous improvement.
 
-For any questions or contributions, please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file or contact us at [your_email@example.com](mailto:your_email@example.com).
-```
+Since my computer runs on Windows, I couldn't use Docker initially. I wasn't aware of this because I had little exposure to Docker at the beginning, which led me to develop all my code based on the Windows system. It was only when I needed to use Docker that I realized Windows does not support Docker. After much consideration, I decided to use a virtual machine service because a virtual machine can run a Linux system. I set up a virtual machine on my computer, configured the environment (Ubuntu), and then modified the code to adapt it to the Linux environment. Finally, I successfully set up Docker and started it on Ubuntu. I believe this change in the system and the use of Docker introduced some risks in my project development. Additionally, since Docker was entirely new to me, I encountered many challenges and spent considerable time learning, particularly with establishing communication between services inside Docker and the external LlamaFile model.
