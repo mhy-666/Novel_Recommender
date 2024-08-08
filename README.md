@@ -25,7 +25,9 @@ This project aims to use the latest Rocket-3b model, combined with Retrieval-Aug
 10. Perform comprehensive testing and optimize the system.
 
 ## Unit Tests
-In the folder named 'tests', there are unit tests
+In the folder named 'tests', there are unit tests for the core functionality.
+
+![unittests](./data/unittests.png)
 
 ## Docker container
 
@@ -34,7 +36,7 @@ In the folder named 'tests', there are unit tests
 
 ![CI/CD Status](https://github.com/mhy-666/Novel_Recommender/actions/workflows/github-actions.yml/badge.svg?branch=master)
 
-## [Demo Video](https://your_link_to_demo_video)
+## [Demo Video](https://youtu.be/OW7QmgCyYPM)
 
 ## Architecture Diagram
 
