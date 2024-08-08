@@ -33,6 +33,7 @@ In the folder named 'tests', there are unit tests
 # Novel Recommender System
 
 ![CI/CD Status](https://github.com/mhy-666/Novel_Recommender/actions/workflows/github-actions-demo.yml/badge.svg?event=push)
+![example event parameter](https://github.com/mhy-666/Novel_Recommender/actions/workflows/github-actions.yml/badge.svg)
 
 ## [Demo Video](https://your_link_to_demo_video)
 
