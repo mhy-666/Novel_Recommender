@@ -40,3 +40,17 @@ repos:
     rev: ''  # Use the sha / tag you want to point at
     hooks:
     -   id: autopep8
+
+- repo: local
+  hooks:
+    - id: pylint
+      name: pylint
+      entry: pylint
+      language: system
+      types: [python]
+      require_serial: true
+      args:
+        [
+          "-rn", # Only display messages
+          "-sn", # Don't display the score
+        ]
