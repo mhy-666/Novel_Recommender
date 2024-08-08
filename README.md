@@ -25,7 +25,9 @@ This project aims to use the latest Rocket-3b model, combined with Retrieval-Aug
 10. Perform comprehensive testing and optimize the system.
 
 ## Unit Tests
-In the folder named 'tests', there are unit tests
+In the folder named 'tests', there are unit tests for the core functionality.
+
+![unittests](./data/unittests.png)
 
 ## Docker container
 
@@ -34,7 +36,7 @@ In the folder named 'tests', there are unit tests
 
 ![CI/CD Status](https://github.com/mhy-666/Novel_Recommender/actions/workflows/github-actions.yml/badge.svg?branch=master)
 
-## [Demo Video](https://your_link_to_demo_video)
+## [Demo Video](https://youtu.be/OW7QmgCyYPM)
 
 ## Architecture Diagram
 
@@ -272,54 +274,16 @@ User Satisfaction: The overall user satisfaction score was 4.3 out of 5.
 
 I choose Github Actions for my CI/CD pipeple. The pipeline is defined in the `github-actions.yml` file, which includes steps for:
 
+- Installing Python dependencies
 - Checking code formatting and linting
 - Building the Docker image
 - Running tests
 - Pushing the Docker image to GitHub Packages
-- Deploying the application
 
-### action.yml File
 
-```yaml
-name: CI/CD Pipeline
 
-on:
-  push:
-    branches:
-      - main
 
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
+##### Demonstrate that you've taken a risk to learn something new, incorporated a cool new framework/technology, or gone above and beyond the minimum requirements
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1
-
-      - name: Log in to GitHub Docker Registry
-        uses: docker/login-action@v1
-        with:
-          registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Build and push Docker image
-        uses: docker/build-push-action@v2
-        with:
-          push: true
-          tags: ghcr.io/your_username/novel_recommender:latest
-
-      - name: Deploy to server
-        run: |
-          ssh user@server 'docker pull ghcr.io/your_username/novel_recommender:latest && docker run -d -p 8501:8501 ghcr.io/your_username/novel_recommender:latest'
-```
-
-## Conclusion
-
-This project showcases the integration of advanced machine learning models with scalable databases and modern web technologies to create a user-centric application. The use of CI/CD pipelines ensures smooth deployment and continuous improvement.
-
-For any questions or contributions, please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file or contact us at [your_email@example.com](mailto:your_email@example.com).
-```
+Since my computer runs on Windows, I couldn't use Docker initially. I wasn't aware of this because I had little exposure to Docker at the beginning, which led me to develop all my code based on the Windows system. It was only when I needed to use Docker that I realized Windows does not support Docker. After much consideration, I decided to use a virtual machine service because a virtual machine can run a Linux system. I set up a virtual machine on my computer, configured the environment (Ubuntu), and then modified the code to adapt it to the Linux environment. Finally, I successfully set up Docker and started it on Ubuntu. I believe this change in the system and the use of Docker introduced some risks in my project development. Additionally, since Docker was entirely new to me, I encountered many challenges and spent considerable time learning, particularly with establishing communication between services inside Docker and the external LlamaFile model.
