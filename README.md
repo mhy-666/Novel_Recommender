@@ -24,9 +24,6 @@ This project aims to use the latest Rocket-3b model, combined with Retrieval-Aug
 
 10. Perform comprehensive testing and optimize the system.
 
-## CI/CD Pipeline
-I choose Github CI/CD as my CI/CD pipeple
-
 ## Unit Tests
 In the folder named 'tests', there are unit tests
 
@@ -35,7 +32,7 @@ In the folder named 'tests', there are unit tests
 
 # Novel Recommender System
 
-![CI/CD Status](https://github.com/mhy-666/Novel_Recommender/actions/workflows/github-actions-demo.yml/badge.svg)
+![CI/CD Status](https://github.com/mhy-666/Novel_Recommender/actions/workflows/github-actions-demo.yml/badge.svg?event=push)
 
 ## [Demo Video](https://your_link_to_demo_video)
 
@@ -273,8 +270,9 @@ User Satisfaction: The overall user satisfaction score was 4.3 out of 5.
 
 ## CI/CD Pipeline
 
-This project uses GitHub Actions for CI/CD. The pipeline is defined in the `action.yml` file, which includes steps for:
+I choose Github Actions for my CI/CD pipeple. The pipeline is defined in the `github-actions.yml` file, which includes steps for:
 
+- Checking code formatting and linting
 - Building the Docker image
 - Running tests
 - Pushing the Docker image to GitHub Packages
