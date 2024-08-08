@@ -17,7 +17,7 @@ streamlit
 langchain_text_splitters
 langchain_community
 langchain_pinecone
-pinecone 
+pinecone
 pytest
 black
 flake8
