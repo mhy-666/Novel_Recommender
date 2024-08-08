@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  streamlit:
+    image: streamlit-image:latest
+    container_name: streamlit
+    ports:
+      - "8501:8501"
+    environment:
+      - LLAMAFILE_URL=http://host.docker.internal:8080/v1
+    volumes:
+      - /mnt/hgfs/llamafile:/app
+    command: streamlit run /app/streamlit_app.py
+    restart: unless-stopped

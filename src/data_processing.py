@@ -4,7 +4,6 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_pinecone import PineconeVectorStore
 import os
 from pinecone import Pinecone
-from dotenv import load_dotenv
 
 
 
@@ -22,11 +21,9 @@ def split_text(data):
     return all_splits
 
 def set_up_pinecone(index_name = 'novels', namespace = 'novelvector'):
-    # initialize connection to pinecone (get API key at app.pinecone.io)
-    load_dotenv()
 
     # initialize connection to pinecone (get API key at app.pinecone.io)
-    api_key = os.getenv('PINECONE_API_KEY')
+    api_key = os.environ.get('PINECONE_API_KEY')
 
     # configure client
     pc = Pinecone(api_key=api_key)
