@@ -163,7 +163,68 @@ I choose Github Actions for my CI/CD pipeple. The pipeline is defined in the `gi
 - Running tests
 - Pushing the Docker image to GitHub Packages
 
+Here is the translated introduction to your README file in English:
 
+---
+
+### Code Quality Checks
+
+We use Continuous Integration and Continuous Deployment (CI/CD) tools to ensure code quality and automate processes. The key components of our CI/CD pipeline include:
+
+- **CI/CD Toolchain**: GitHub Actions is used for automated builds, tests, and deployments.
+- **Code Formatting**: Automated code formatting is handled by `black`.
+- **Code Sorting**: The `isort` tool automatically sorts `import` statements.
+- **Code Checking**: `flake8` is used for code style checks.
+- **Static Code Analysis**: `autoflake` is used to remove unused variables and imports.
+- **Automatic Fixing**: The `pre-commit` tool is configured to run code formatting and checking tools before each commit.
+
+
+To maintain high code quality, we have integrated the `pre-commit` tool into our CI/CD process to handle code formatting and checking. `pre-commit` is a tool for setting up Git hooks that automatically run a series of code quality tools before each commit.
+
+#### Configuration File
+
+The `pre-commit` configuration file is `.pre-commit-config.yaml` and includes the following hooks:
+
+```yaml
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.4.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+
+  - repo: https://github.com/psf/black
+    rev: 22.12.0
+    hooks:
+      - id: black
+
+  - repo: https://github.com/pre-commit/mirrors-isort
+    rev: v5.12.0
+    hooks:
+      - id: isort
+```
+
+#### Installation and Usage
+
+To install `pre-commit` and set up hooks, follow these steps:
+
+1. **Install `pre-commit`**:
+
+   ```bash
+   pip install pre-commit
+   ```
+
+2. **Install Git Hooks**:
+
+   ```bash
+   pre-commit install
+   ```
+
+3. **Manually Run All Hooks (Optional)**:
+
+   ```bash
+   pre-commit run --all-files
+   ```
 
 
 ##### Demonstrate that you've taken a risk to learn something new, incorporated a cool new framework/technology, or gone above and beyond the minimum requirements
