@@ -41,7 +41,7 @@ In the folder named 'tests', there are unit tests
 
 ## Architecture Diagram
 
-![Architecture Diagram](./data/graph.png)
+![Architecture Diagram](./data/Architecture_diagram.png)
 
 ## Project Structure
 
@@ -266,6 +266,10 @@ Results:
 Relevance: The system achieved an average relevance score of 4.2 out of 5.
 Diversity: The average diversity score was 4.0 out of 5.
 User Satisfaction: The overall user satisfaction score was 4.3 out of 5.
+
+## Vector Database
+
+![database](./data/screenshot_db.png)
 
 ## CI/CD Pipeline
 
