@@ -19,7 +19,7 @@ langchain_community
 langchain_pinecone
 pinecone 
 pytest
-black 
-flake8 
-ruff 
+black
+flake8
+ruff
 autoflake
