@@ -274,50 +274,14 @@ User Satisfaction: The overall user satisfaction score was 4.3 out of 5.
 
 I choose Github Actions for my CI/CD pipeple. The pipeline is defined in the `github-actions.yml` file, which includes steps for:
 
+- Installing Python dependencies
 - Checking code formatting and linting
 - Building the Docker image
 - Running tests
 - Pushing the Docker image to GitHub Packages
-- Deploying the application
 
-### action.yml File
 
-```yaml
-name: CI/CD Pipeline
 
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1
-
-      - name: Log in to GitHub Docker Registry
-        uses: docker/login-action@v1
-        with:
-          registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Build and push Docker image
-        uses: docker/build-push-action@v2
-        with:
-          push: true
-          tags: ghcr.io/your_username/novel_recommender:latest
-
-      - name: Deploy to server
-        run: |
-          ssh user@server 'docker pull ghcr.io/your_username/novel_recommender:latest && docker run -d -p 8501:8501 ghcr.io/your_username/novel_recommender:latest'
-```
 
 ##### Demonstrate that you've taken a risk to learn something new, incorporated a cool new framework/technology, or gone above and beyond the minimum requirements
 
