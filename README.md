@@ -147,11 +147,13 @@ The performance of the novel recommender system was evaluated using human evalua
 
 ### Results:
 
-**Relevance**: The system achieved an average relevance score of 4.2 out of 5.
+**Relevance**: The system achieved an average relevance score of 4 out of 5.
 
-**Diversity**: The average diversity score was 4.0 out of 5.
+**Diversity**: The average diversity score was 3.6 out of 5.
 
-**User Satisfaction**: The overall user satisfaction score was 4.3 out of 5.
+**User Satisfaction**: The overall user satisfaction score was 4 out of 5.
+
+![results](./data/results.png)
 
 ## Vector Database
 
