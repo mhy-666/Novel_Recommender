@@ -131,6 +131,7 @@ docker exec -it novel-recommender pytest tests/
 ### Screenshots
 
 ![image](./data/screenshot_app1.png)
+![image](./data/screenshot_app2.png)
 
 
 ## Detailed Function Descriptions
