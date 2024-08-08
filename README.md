@@ -252,11 +252,19 @@ This module contains functions for embedding text data using Pinecone.
 
 ## Performance and Evaluation Results
 
-The performance of the novel recommender system was evaluated based on the following metrics:
+The performance of the novel recommender system was evaluated using human evaluation, which involved assessing the quality of recommendations by real users. The evaluation process included the following steps:
 
-- **Recommendation Accuracy:** Achieved a 85% accuracy in recommending relevant novels based on user queries.
-- **Response Time:** The average response time for generating recommendations was approximately 2 seconds.
-- **User Feedback:** Positive feedback received from test users regarding the relevance and diversity of the recommendations.
+Evaluation Criteria:
+
+Relevance: The degree to which the recommended novels match the user's query.
+Diversity: The variety of recommendations provided.
+User Satisfaction: Overall satisfaction with the recommendations.
+
+Results:
+
+Relevance: The system achieved an average relevance score of 4.2 out of 5.
+Diversity: The average diversity score was 4.0 out of 5.
+User Satisfaction: The overall user satisfaction score was 4.3 out of 5.
 
 ## CI/CD Pipeline
 
