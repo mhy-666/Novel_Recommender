@@ -1,10 +1,10 @@
 ## Project Goal
 I personally enjoy reading novels and manga comics very much. I believe many people, like me, need personalized recommendations to find content they are interested in. Traditional recommendation systems usually rely on users' historical data and ratings, but these methods may not meet the needs of those who want to explore more detailed/specific subjects or try some new subjects.
 
-This project aims to use the latest LLaMA3 Instruct model, combined with Retrieval-Augmented Generation (RAG) technology, to build a novel/manga recommender. Users can input the novel or manga genres or tags they are interested in, and the system will query the relevant database and generate a personalized recommendation list.
+This project aims to use the latest Rocket-3b model, combined with Retrieval-Augmented Generation (RAG) technology, to build a novel/manga recommender. Users can input the novel or manga genres or tags they are interested in, and the system will query the relevant database and generate a personalized recommendation list.
 
 ## Timeline(Week)
-1. Investigate the LLaMA3 instruct model and the usage of LLamafile.
+1. Investigate the Rocket-3b model and the usage of LLamafile.
 
 2. Collect and preprocess relevant data for novels and manga.
 
@@ -33,33 +33,31 @@ In the folder named 'tests', there are unit tests
 ## Docker container
 
 
-以下是更加详细和扩展后的 README 文件，包含项目的所有关键细节和说明，包括各个函数的描述和用法。
-
-```markdown
 # Novel Recommender System
 
-![CI/CD Status](https://github.com/your_username/your_repository/actions/workflows/action.yml/badge.svg)
+![CI/CD Status](https://github.com/mhy-666/Novel_Recommender/actions/workflows/github-actions.yml/badge.svg)
 
 ## [Demo Video](https://your_link_to_demo_video)
 
-## Project Purpose
-
-The purpose of this project is to develop a novel recommender system that leverages Retrieval-Augmented Generation (RAG) using the `rocket-3b.Q5_K_M.llamafile` model. The system is designed to help users find novels they desire the most by utilizing a powerful database (Pinecone) and a user-friendly front-end (Streamlit).
-
 ## Architecture Diagram
 
-![Architecture Diagram](path_to_your_architecture_diagram_image)
+![Architecture Diagram](./data/graph.png)
 
 ## Project Structure
 
 ```
 .
-├── data_processing.py
-├── LLMs.py
-├── rag.py
-├── embedding.py
+├── src
+    ├── data_processing.py
+    ├── LLMs.py
+    ├── rag.py
+    ├── embedding.py
+├── tests
+    ├── unittests.py
+├── notebook
+├── data
+    ├── data related files
 ├── Dockerfile
-├── action.yml
 ├── requirements.txt
 ├── README.md
 ├── .env
