@@ -34,8 +34,8 @@ In the folder named 'tests', there are unit tests for the core functionality.
 
 # Novel Recommender System
 
-![CI/CD Status(https://github.com/mhy-666/Novel_Recommender/actions/workflows/github-actions.yml/badge.svg)](https://github.com/mhy-666/Novel_Recommender/actions/workflows/github-actions.yml)
-![Docker(https://github.com/mhy-666/Novel_Recommender/actions/workflows/docker-images.yml/badge.svg)](https://github.com/mhy-666/Novel_Recommender/actions/workflows/docker-images.yml)
+![CI/CD Status (https://github.com/mhy-666/Novel_Recommender/actions/workflows/github-actions.yml/badge.svg)](https://github.com/mhy-666/Novel_Recommender/actions/workflows/github-actions.yml)
+![Docker (https://github.com/mhy-666/Novel_Recommender/actions/workflows/docker-images.yml/badge.svg)](https://github.com/mhy-666/Novel_Recommender/actions/workflows/docker-images.yml)
 
 ## [Demo Video](https://youtu.be/OW7QmgCyYPM)
 
