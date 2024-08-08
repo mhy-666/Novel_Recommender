@@ -140,13 +140,17 @@ The performance of the novel recommender system was evaluated using human evalua
 Evaluation Criteria:
 
 Relevance: The degree to which the recommended novels match the user's query.
+
 Diversity: The variety of recommendations provided.
+
 User Satisfaction: Overall satisfaction with the recommendations.
 
 Results:
 
 Relevance: The system achieved an average relevance score of 4.2 out of 5.
+
 Diversity: The average diversity score was 4.0 out of 5.
+
 User Satisfaction: The overall user satisfaction score was 4.3 out of 5.
 
 ## Vector Database
