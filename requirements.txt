@@ -20,7 +20,5 @@ langchain_pinecone
 pinecone
 pytest
 black
-pylint
-mypy
-bandit
+mypy==1.11.1
 autoflake
