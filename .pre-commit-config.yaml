@@ -6,8 +6,7 @@ repos:
     -   id: debug-statements
     -   id: end-of-file-fixer
     -   id: trailing-whitespace
-    -   id: flake8
-        exclude: ^tests/fixtures/
+
 -   repo: https://github.com/asottile/setup-cfg-fmt
     rev: v2.5.0
     hooks:
@@ -41,8 +40,3 @@ repos:
     rev: 'v2.0.4'  # Use the sha / tag you want to point at
     hooks:
     -   id: autopep8
-
--   repo: https://github.com/pycqa/flake8
-    rev: ''  # pick a git hash / tag to point to
-    hooks:
-    -   id: flake8
