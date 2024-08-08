@@ -130,8 +130,8 @@ docker exec -it novel-recommender pytest tests/
 
 ### Screenshots
 
-![Home Page](path_to_your_home_page_screenshot)
-![Recommendation Example](path_to_your_recommendation_example_screenshot)
+![image](./data/screenshot_app1.png)
+
 
 ## Detailed Function Descriptions
 
