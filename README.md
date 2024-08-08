@@ -84,7 +84,7 @@ In the folder named 'tests', there are unit tests
 ### Cloning the Repository
 
 ```bash
-git clone https://github.com/your_username/your_repository.git
+git clone https://github.com/mhy-666/novel_recommender.git
 cd your_repository
 ```
 
@@ -107,7 +107,7 @@ docker build -t novel-recommender:latest .
 2. **Run the Docker container:**
 
 ```bash
-docker run -p 8501:8501 --env-file .env novel-recommender:latest
+docker run -d -p 8501:8501 --network host --name novel_recommender novel_recommender
 ```
 
 ### Accessing the Application
