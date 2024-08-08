@@ -85,7 +85,7 @@ In the folder named 'tests', there are unit tests
 
 ```bash
 git clone https://github.com/mhy-666/novel_recommender.git
-cd your_repository
+cd novel_recommender
 ```
 
 ### Setting Up Environment Variables
@@ -307,11 +307,11 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ghcr.io/your_username/your_repository:latest
+          tags: ghcr.io/your_username/novel_recommender:latest
 
       - name: Deploy to server
         run: |
-          ssh user@server 'docker pull ghcr.io/your_username/your_repository:latest && docker run -d -p 8501:8501 ghcr.io/your_username/your_repository:latest'
+          ssh user@server 'docker pull ghcr.io/your_username/novel_recommender:latest && docker run -d -p 8501:8501 ghcr.io/your_username/novel_recommender:latest'
 ```
 
 ## Conclusion
