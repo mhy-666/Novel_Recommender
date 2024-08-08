@@ -54,14 +54,14 @@ jobs:
         with:
           python-version: '3.9'
 
-      - name: Install dependencies
-        run: pip install flake8
+      - name: Run pylint
+        run: pylint src/
 
-      - name: Lint code
-        run: |
-          ruff check . --fix
-          autoflake --in-place --remove-unused-variables --remove-all-unused-imports .
-          flake8 .
+      - name: Run mypy
+        run: mypy src/
+
+      - name: Run bandit
+        run: bandit -r src/
 
   test:
     runs-on: ubuntu-latest
